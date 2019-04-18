@@ -239,7 +239,9 @@ public class MainActivity extends AppCompatActivity {
         if(countZweien(wuerfel)==1&&countDreien(wuerfel)==1&&countVieren(wuerfel)==1&&countFuenfen(wuerfel)==1){
             return true;
         }
-        if(countDreien(wuerfel)==1&&countVieren(wuerfel)==1&&countFuenfen(wuerfel)==1&&countSechsen(wuerfel)==1)
+        if(countDreien(wuerfel)==1&&countVieren(wuerfel)==1&&countFuenfen(wuerfel)==1&&countSechsen(wuerfel)==1){
+            return true;
+        }
         return false;
     }
 
@@ -276,7 +278,7 @@ public class MainActivity extends AppCompatActivity {
         zeigeDreierpaschAn(isDreierpasch(wuerfel));
         zeigeViererpaschAn(isViererpasch(wuerfel));
         zeigeKleineStrasseAn(isKleineStrasse(wuerfel));
-        zeigeGrosseStrassean(isGrosseStrasse(wuerfel));
+        zeigeGrosseStrasseAn(isGrosseStrasse(wuerfel));
         zeigeKniffelAn(isKniffel(wuerfel));
         zeigeChanceAn(countChance(wuerfel));
     }
@@ -284,87 +286,214 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeSechsenAn(int anzahl){
         //erstelle Button mit anzahl * 6 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.sechser);
+        if(tv.getText().equals("")&&anzahl!=0){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(anzahl*6));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeFuenfenAn(int anzahl){
         //erstelle Button mit anzahl * 5 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.fuenfer);
+        if(tv.getText().equals("")&&anzahl!=0){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(anzahl*5));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeVierenAn(int anzahl){
         //erstelle Button mit anzahl * 4 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.vierer);
+        if(tv.getText().equals("")&&anzahl!=0){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(anzahl*4));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeDreienAn(int anzahl){
         //erstelle Button mit anzahl * 3 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.dreier);
+        if(tv.getText().equals("")&&anzahl!=0){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(anzahl*3));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeZweienAn(int anzahl){
         //erstelle Button mit anzahl * 2 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.zweier);
+        if(tv.getText().equals("")&&anzahl!=0){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(anzahl*2));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeEinsenAn(int anzahl){
         //erstelle Button mit anzahl * 1 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.einser);
+        if(tv.getText().equals("")&&anzahl!=0){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(anzahl));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeFullHouseAn(boolean fullhouse){
         //wenn fullhouse, neuer button mit 25, wenn nicht, kein button
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.fullhouse);
+        if(tv.getText().equals("")&&fullhouse){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(25));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeDreierpaschAn(int zahl){
         //falls zahl = 0, erstelle keinen neuen button, sonst button mit zahl * 3 erstellen
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.dreierpasch);
+        if(tv.getText().equals("")&&zahl!=0){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(zahl));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeViererpaschAn(int zahl){
         //falls zahl = 0, erstelle keinen neuen button, sonst button mit zahl * 4 erstellen
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.viererpasch);
+        if(tv.getText().equals("")&&zahl!=0){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(zahl));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeKleineStrasseAn(boolean kleineStrasse){
         //falls true, neuen button mit 30 erstellen, sonst keinen
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.kleinestrasse);
+        if(tv.getText().equals("")&&kleineStrasse){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(30));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
-    public void zeigeGrosseStrassean(boolean grosseStrasse){
+    public void zeigeGrosseStrasseAn(boolean grosseStrasse){
         //falls true, neuen button mit 40 erstellen, sonst keinen
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.grossestrasse);
+        if(tv.getText().equals("")&&grosseStrasse){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(40));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeKniffelAn(boolean kniffel){
         //falls true, neuen button mit 50 erstellen, sonst keinen
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.kniffel);
+        if(tv.getText().equals("")&&kniffel){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(50));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void zeigeChanceAn(int zahl){
         //erstelle button mit zahl
         //button nur erstellen, wenn textfeld dort leer ist
+        TextView tv = findViewById(R.id.chance);
+        if(tv.getText().equals("")){
+            Button b = new Button(this);//richtig so?
+            b.setText(String.valueOf(zahl));
+            b.setOnClickListener(this::moeglichkeitsButtonOnClickListener); //wie ohne lambda?
+            //button an gridlines befestigen
+        }
         //onClickListener von Button auf methode moeglichkeitsButtonOnClickListener()
     }
 
     public void starteSpielNeu(){
         //setze alle textfelder auf leer
+        TextView tv = findViewById(R.id.einer);
+        tv.setText("");
+        tv=findViewById(R.id.zweier);
+        tv.setText("");
+        tv=findViewById(R.id.dreier);
+        tv.setText("");
+        tv=findViewById(R.id.vierer);
+        tv.setText("");
+        tv=findViewById(R.id.fuenfer);
+        tv.setText("");
+        tv=findViewById(R.id.sechser);
+        tv.setText("");
+        tv=findViewById(R.id.fullhouse);
+        tv.setText("");
+        tv=findViewById(R.id.dreierpasch);
+        tv.setText("");
+        tv=findViewById(R.id.viererpasch);
+        tv.setText("");
+        tv=findViewById(R.id.kleinestrasse);
+        tv.setText("");
+        tv=findViewById(R.id.grossestrasse);
+        tv.setText("");
+        tv=findViewById(R.id.kniffel);
+        tv.setText("");
+        tv=findViewById(R.id.chance);
+        tv.setText("");
+        //fuer alle Spieler wiederholen
     }
 
     protected void moeglichkeitsButtonOnClickListener(){
         //fuege beim Textfeld an der Stelle des Buttons die Zahl ein, die im Button stand
+    }
+
+    public void game(){
+        while(true/*spiel noch nicht zuende, vllt einfach mit zaehler implementieren, weil eh immer gleich viele Zuege*/){
+            int[] wuerfel = null;//wuerfeln-Methode, vllt auch mehrere Methoden? --> Moritz
+            berechneMoeglichkeiten(wuerfel);
+            //klick auf button und eintragen in textview -> sobald Layout erstellt --> Felix, Jessica
+            //wechsle Spieler/Activity --> absprechen, wie genau das funktioniert
+        }
     }
 
 }
