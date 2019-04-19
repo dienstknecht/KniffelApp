@@ -1,0 +1,4 @@
+Buttons fangen mit bt an - Name groß
+Textviews fangen mit tx an - Name groß
+Gridlines fangen mit glh/glv prozentzahl an
+constraint layout fängt mit cl an
