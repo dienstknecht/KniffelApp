@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return count;
     }
-
+    
     private int countEinsen(int[] wuerfel){
         int count =0;
         for(int i : wuerfel){
