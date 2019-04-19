@@ -489,11 +489,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void game(){
         while(true/*spiel noch nicht zuende, vllt einfach mit zaehler implementieren, weil eh immer gleich viele Zuege*/){
-            int[] wuerfel = null;//wuerfeln-Methode, vllt auch mehrere Methoden? --> Moritz
+            int[] wuerfel = diceRoll();//wuerfeln-Methode, vllt auch mehrere Methoden? --> Moritz
             berechneMoeglichkeiten(wuerfel);
             //klick auf button und eintragen in textview -> sobald Layout erstellt --> Felix, Jessica
             //wechsle Spieler/Activity --> absprechen, wie genau das funktioniert
         }
+    }
+
+    public int[] diceRoll(){
+        int[] result = new int[5];
+        for(int i= 0; i<5; i++){
+            result[i] = (int)((Math.random()) * 6 + 1);
+        }
+        return result;
     }
 
 }
