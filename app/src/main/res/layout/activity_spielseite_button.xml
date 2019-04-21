@@ -183,17 +183,17 @@
 
     <Button
         android:id="@+id/btEiner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@+id/glh05"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/glh10"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv45"
+        app:layout_constraintTop_toTopOf="@+id/glh05" />
 
     <Button
         android:id="@+id/btZweier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="@+id/glh10"
         app:layout_constraintBottom_toBottomOf="@+id/glh15"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
@@ -201,8 +201,8 @@
 
     <Button
         android:id="@+id/btDreier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="@+id/glh15"
         app:layout_constraintBottom_toBottomOf="@+id/glh20"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
@@ -210,8 +210,8 @@
 
     <Button
         android:id="@+id/btVierer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="@+id/glh20"
         app:layout_constraintBottom_toBottomOf="@+id/glh25"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
@@ -219,8 +219,8 @@
 
     <Button
         android:id="@+id/btFuenfer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="@+id/glh25"
         app:layout_constraintBottom_toBottomOf="@+id/glh30"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
@@ -228,10 +228,73 @@
 
     <Button
         android:id="@+id/btSechser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="@+id/glh30"
         app:layout_constraintBottom_toBottomOf="@+id/glh35"
+        app:layout_constraintLeft_toLeftOf="@+id/glv25"
+        app:layout_constraintRight_toRightOf="@+id/glv45" />
+
+    <Button
+        android:id="@+id/btFullHouse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/glh45"
+        app:layout_constraintBottom_toBottomOf="@+id/glh50"
+        app:layout_constraintLeft_toLeftOf="@+id/glv25"
+        app:layout_constraintRight_toRightOf="@+id/glv45" />
+
+    <Button
+        android:id="@+id/btDreierpasch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/glh50"
+        app:layout_constraintBottom_toBottomOf="@+id/glh55"
+        app:layout_constraintLeft_toLeftOf="@+id/glv25"
+        app:layout_constraintRight_toRightOf="@+id/glv45" />
+
+    <Button
+        android:id="@+id/btViererpasch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/glh55"
+        app:layout_constraintBottom_toBottomOf="@+id/glh60"
+        app:layout_constraintLeft_toLeftOf="@+id/glv25"
+        app:layout_constraintRight_toRightOf="@+id/glv45" />
+
+    <Button
+        android:id="@+id/btKleineStrasse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/glh60"
+        app:layout_constraintBottom_toBottomOf="@+id/glh65"
+        app:layout_constraintLeft_toLeftOf="@+id/glv25"
+        app:layout_constraintRight_toRightOf="@+id/glv45" />
+
+    <Button
+        android:id="@+id/btGrosseStrasse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/glh65"
+        app:layout_constraintBottom_toBottomOf="@+id/glh70"
+        app:layout_constraintLeft_toLeftOf="@+id/glv25"
+        app:layout_constraintRight_toRightOf="@+id/glv45" />
+
+    <Button
+        android:id="@+id/btKniffel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/glh70"
+        app:layout_constraintBottom_toBottomOf="@+id/glh75"
+        app:layout_constraintLeft_toLeftOf="@+id/glv25"
+        app:layout_constraintRight_toRightOf="@+id/glv45" />
+
+    <Button
+        android:id="@+id/btChance"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/glh75"
+        app:layout_constraintBottom_toBottomOf="@+id/glh80"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
         app:layout_constraintRight_toRightOf="@+id/glv45" />
 
