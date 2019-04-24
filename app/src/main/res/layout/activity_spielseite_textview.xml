@@ -274,16 +274,6 @@
         app:layout_constraintRight_toRightOf="@+id/glv25" />
 
     <TextView
-        android:id="@+id/txNameFullHouse"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="Full-House"
-        app:layout_constraintTop_toTopOf="@+id/glh45"
-        app:layout_constraintBottom_toBottomOf="@+id/glh50"
-        app:layout_constraintLeft_toLeftOf="@+id/glv05"
-        app:layout_constraintRight_toRightOf="@+id/glv25" />
-
-    <TextView
         android:id="@+id/txNameDreierpasch"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -300,6 +290,16 @@
         android:text="Viererpasch"
         app:layout_constraintTop_toTopOf="@+id/glh55"
         app:layout_constraintBottom_toBottomOf="@+id/glh60"
+        app:layout_constraintLeft_toLeftOf="@+id/glv05"
+        app:layout_constraintRight_toRightOf="@+id/glv25" />
+
+    <TextView
+        android:id="@+id/txNameFullHouse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Full-House"
+        app:layout_constraintTop_toTopOf="@+id/glh45"
+        app:layout_constraintBottom_toBottomOf="@+id/glh50"
         app:layout_constraintLeft_toLeftOf="@+id/glv05"
         app:layout_constraintRight_toRightOf="@+id/glv25" />
 
@@ -428,15 +428,6 @@
         app:layout_constraintRight_toRightOf="@+id/glv45" />
 
     <TextView
-        android:id="@+id/txFullHouse"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@+id/glh45"
-        app:layout_constraintBottom_toBottomOf="@+id/glh50"
-        app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
-
-    <TextView
         android:id="@+id/txDreierpasch"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -451,6 +442,15 @@
         android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="@+id/glh55"
         app:layout_constraintBottom_toBottomOf="@+id/glh60"
+        app:layout_constraintLeft_toLeftOf="@+id/glv25"
+        app:layout_constraintRight_toRightOf="@+id/glv45" />
+
+    <TextView
+        android:id="@+id/txFullHouse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/glh45"
+        app:layout_constraintBottom_toBottomOf="@+id/glh50"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
         app:layout_constraintRight_toRightOf="@+id/glv45" />
 
