@@ -173,7 +173,7 @@
         app:layout_constraintGuide_percent="0.25" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/glv45"
+        android:id="@+id/glv50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -187,7 +187,7 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/glh10"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45"
+        app:layout_constraintRight_toRightOf="@+id/glv50"
         app:layout_constraintTop_toTopOf="@+id/glh05" />
 
     <Button
@@ -197,7 +197,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh10"
         app:layout_constraintBottom_toBottomOf="@+id/glh15"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btDreier"
@@ -206,7 +206,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh15"
         app:layout_constraintBottom_toBottomOf="@+id/glh20"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btVierer"
@@ -215,7 +215,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh20"
         app:layout_constraintBottom_toBottomOf="@+id/glh25"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btFuenfer"
@@ -224,7 +224,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh25"
         app:layout_constraintBottom_toBottomOf="@+id/glh30"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btSechser"
@@ -233,7 +233,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh30"
         app:layout_constraintBottom_toBottomOf="@+id/glh35"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btFullHouse"
@@ -242,7 +242,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh45"
         app:layout_constraintBottom_toBottomOf="@+id/glh50"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btDreierpasch"
@@ -251,7 +251,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh50"
         app:layout_constraintBottom_toBottomOf="@+id/glh55"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btViererpasch"
@@ -260,7 +260,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh55"
         app:layout_constraintBottom_toBottomOf="@+id/glh60"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btKleineStrasse"
@@ -269,7 +269,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh60"
         app:layout_constraintBottom_toBottomOf="@+id/glh65"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btGrosseStrasse"
@@ -278,7 +278,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh65"
         app:layout_constraintBottom_toBottomOf="@+id/glh70"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btKniffel"
@@ -287,7 +287,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh70"
         app:layout_constraintBottom_toBottomOf="@+id/glh75"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <Button
         android:id="@+id/btChance"
@@ -296,6 +296,6 @@
         app:layout_constraintTop_toTopOf="@+id/glh75"
         app:layout_constraintBottom_toBottomOf="@+id/glh80"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
 </android.support.constraint.ConstraintLayout>
