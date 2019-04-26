@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getEiner(){
-        TextView v = findViewById(R.id.einer);
+        TextView v = findViewById(R.id.txEiner);
         if(v.getText().equals("")){
             return 0;
         }
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getZweier(){
-        TextView v = findViewById(R.id.zweier);
+        TextView v = findViewById(R.id.txZweier);
         if(v.getText().equals("")){
             return 0;
         }
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getDreier(){
-        TextView v = findViewById(R.id.dreier);
+        TextView v = findViewById(R.id.txDreier);
         if(v.getText().equals("")){
             return 0;
         }
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getVierer(){
-        TextView v = findViewById(R.id.vierer);
+        TextView v = findViewById(R.id.txVierer);
         if(v.getText().equals("")){
             return 0;
         }
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getFuenfer(){
-        TextView v = findViewById(R.id.fuenfer);
+        TextView v = findViewById(R.id.txFuenfer);
         if(v.getText().equals("")){
             return 0;
         }
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getSechser(){
-        TextView v = findViewById(R.id.sechser);
+        TextView v = findViewById(R.id.txSechser);
         if(v.getText().equals("")){
             return 0;
         }
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getDreierpasch(){
-        TextView v = findViewById(R.id.dreierpasch);
+        TextView v = findViewById(R.id.txDreierpasch);
         if(v.getText().equals("")){
             return 0;
         }
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getViererpasch(){
-        TextView v = findViewById(R.id.viererpasch);
+        TextView v = findViewById(R.id.txViererpasch);
         if(v.getText().equals("")){
             return 0;
         }
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getFullHouse(){
-        TextView v = findViewById(R.id.fullhouse);
+        TextView v = findViewById(R.id.txFullHouse);
         if(v.getText().equals("")){
             return 0;
         }
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getKleineStrasse(){
-        TextView v = findViewById(R.id.kleinestrasse);
+        TextView v = findViewById(R.id.txKleineStrasse);
         if(v.getText().equals("")){
             return 0;
         }
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getGrosseStrasse(){
-        TextView v = findViewById(R.id.grossestrasse);
+        TextView v = findViewById(R.id.txGrosseStrasse);
         if(v.getText().equals("")){
             return 0;
         }
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getKniffel(){
-        TextView v = findViewById(R.id.kniffel);
+        TextView v = findViewById(R.id.txKniffel);
         if(v.getText().equals("")){
             return 0;
         }
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getChance(){
-        TextView v = findViewById(R.id.chance);
+        TextView v = findViewById(R.id.txChance);
         if(v.getText().equals("")){
             return 0;
         }
@@ -286,7 +286,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeSechsenAn(int anzahl){
         //erstelle Button mit anzahl * 6 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.sechser);
+        TextView tv = findViewById(R.id.btSechser);
         if(tv.getText().equals("")&&anzahl!=0){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(anzahl*6));
@@ -299,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeFuenfenAn(int anzahl){
         //erstelle Button mit anzahl * 5 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.fuenfer);
+        TextView tv = findViewById(R.id.btFuenfer);
         if(tv.getText().equals("")&&anzahl!=0){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(anzahl*5));
@@ -312,7 +312,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeVierenAn(int anzahl){
         //erstelle Button mit anzahl * 4 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.vierer);
+        TextView tv = findViewById(R.id.btVierer);
         if(tv.getText().equals("")&&anzahl!=0){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(anzahl*4));
@@ -325,7 +325,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeDreienAn(int anzahl){
         //erstelle Button mit anzahl * 3 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.dreier);
+        TextView tv = findViewById(R.id.btDreier);
         if(tv.getText().equals("")&&anzahl!=0){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(anzahl*3));
@@ -338,7 +338,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeZweienAn(int anzahl){
         //erstelle Button mit anzahl * 2 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.zweier);
+        TextView tv = findViewById(R.id.btZweier);
         if(tv.getText().equals("")&&anzahl!=0){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(anzahl*2));
@@ -351,7 +351,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeEinsenAn(int anzahl){
         //erstelle Button mit anzahl * 1 als Anzeige, wenn Anzahl 0, erstelle keinen Button
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.einser);
+        TextView tv = findViewById(R.id.btEiner);
         if(tv.getText().equals("")&&anzahl!=0){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(anzahl));
@@ -364,7 +364,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeFullHouseAn(boolean fullhouse){
         //wenn fullhouse, neuer button mit 25, wenn nicht, kein button
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.fullhouse);
+        TextView tv = findViewById(R.id.btFullHouse);
         if(tv.getText().equals("")&&fullhouse){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(25));
@@ -377,7 +377,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeDreierpaschAn(int zahl){
         //falls zahl = 0, erstelle keinen neuen button, sonst button mit zahl * 3 erstellen
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.dreierpasch);
+        TextView tv = findViewById(R.id.btDreierpasch);
         if(tv.getText().equals("")&&zahl!=0){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(zahl));
@@ -390,7 +390,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeViererpaschAn(int zahl){
         //falls zahl = 0, erstelle keinen neuen button, sonst button mit zahl * 4 erstellen
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.viererpasch);
+        TextView tv = findViewById(R.id.btViererpasch);
         if(tv.getText().equals("")&&zahl!=0){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(zahl));
@@ -403,7 +403,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeKleineStrasseAn(boolean kleineStrasse){
         //falls true, neuen button mit 30 erstellen, sonst keinen
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.kleinestrasse);
+        TextView tv = findViewById(R.id.btKleineStrasse);
         if(tv.getText().equals("")&&kleineStrasse){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(30));
@@ -416,7 +416,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeGrosseStrasseAn(boolean grosseStrasse){
         //falls true, neuen button mit 40 erstellen, sonst keinen
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.grossestrasse);
+        TextView tv = findViewById(R.id.btGrosseStrasse);
         if(tv.getText().equals("")&&grosseStrasse){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(40));
@@ -429,7 +429,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeKniffelAn(boolean kniffel){
         //falls true, neuen button mit 50 erstellen, sonst keinen
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.kniffel);
+        TextView tv = findViewById(R.id.btKniffel);
         if(tv.getText().equals("")&&kniffel){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(50));
@@ -442,7 +442,7 @@ public class MainActivity extends AppCompatActivity {
     public void zeigeChanceAn(int zahl){
         //erstelle button mit zahl
         //button nur erstellen, wenn textfeld dort leer ist
-        TextView tv = findViewById(R.id.chance);
+        TextView tv = findViewById(R.id.btChance);
         if(tv.getText().equals("")){
             Button b = new Button(this);//richtig so?
             b.setText(String.valueOf(zahl));
@@ -454,36 +454,36 @@ public class MainActivity extends AppCompatActivity {
 
     public void starteSpielNeu(){
         //setze alle textfelder auf leer
-        TextView tv = findViewById(R.id.einer);
+        TextView tv = findViewById(R.id.btEiner);
         tv.setText("");
-        tv=findViewById(R.id.zweier);
+        tv=findViewById(R.id.btZweier);
         tv.setText("");
-        tv=findViewById(R.id.dreier);
+        tv=findViewById(R.id.btDreier);
         tv.setText("");
-        tv=findViewById(R.id.vierer);
+        tv=findViewById(R.id.btVierer);
         tv.setText("");
-        tv=findViewById(R.id.fuenfer);
+        tv=findViewById(R.id.btFuenfer);
         tv.setText("");
-        tv=findViewById(R.id.sechser);
+        tv=findViewById(R.id.btSechser);
         tv.setText("");
-        tv=findViewById(R.id.fullhouse);
+        tv=findViewById(R.id.btFullHouse);
         tv.setText("");
-        tv=findViewById(R.id.dreierpasch);
+        tv=findViewById(R.id.btDreierpasch);
         tv.setText("");
-        tv=findViewById(R.id.viererpasch);
+        tv=findViewById(R.id.btViererpasch);
         tv.setText("");
-        tv=findViewById(R.id.kleinestrasse);
+        tv=findViewById(R.id.btKleineStrasse);
         tv.setText("");
-        tv=findViewById(R.id.grossestrasse);
+        tv=findViewById(R.id.btGrosseStrasse);
         tv.setText("");
-        tv=findViewById(R.id.kniffel);
+        tv=findViewById(R.id.btKniffel);
         tv.setText("");
-        tv=findViewById(R.id.chance);
+        tv=findViewById(R.id.btChance);
         tv.setText("");
         //fuer alle Spieler wiederholen
     }
 
-    protected void moeglichkeitsButtonOnClickListener(){
+    public void moeglichkeitsButtonOnClickListener(){
         //fuege beim Textfeld an der Stelle des Buttons die Zahl ein, die im Button stand
     }
 
