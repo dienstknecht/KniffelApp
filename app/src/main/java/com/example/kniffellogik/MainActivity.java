@@ -6,6 +6,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -497,7 +498,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         //fuer alle Spieler wiederholen
     }
 
-    public void moeglichkeitsButtonOnClickListener(){
+    public void moeglichkeitsButtonOnClickListener(View v){
         //fuege beim Textfeld an der Stelle des Buttons die Zahl ein, die im Button stand
     }
 
