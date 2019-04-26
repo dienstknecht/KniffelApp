@@ -159,13 +159,6 @@
         app:layout_constraintGuide_percent="0.05" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/glv95"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95" />
-
-    <android.support.constraint.Guideline
         android:id="@+id/glv25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -174,23 +167,37 @@
         app:layout_constraintGuide_percent="0.25" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/glv45"
+        android:id="@+id/glv50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="196dp"
-        app:layout_constraintGuide_percent="0.45" />
+        app:layout_constraintGuide_percent="0.5" />
 
+    <android.support.constraint.Guideline
+        android:id="@+id/glv70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="196dp"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/glv95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
 
     <TextView
         android:id="@+id/txSpieler"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text=""
-        app:layout_constraintTop_toTopOf="@+id/glh05"
-        app:layout_constraintBottom_toBottomOf="@+id/glh10"
-        app:layout_constraintLeft_toLeftOf="@+id/glv45"
-        app:layout_constraintRight_toRightOf="@+id/glv95" />
+        android:layout_height="30dp"
+        android:text="Spieler"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/glh05"
+        app:layout_constraintLeft_toLeftOf="@+id/glv25"
+        app:layout_constraintRight_toRightOf="@+id/glv70" />
 
 
     <TextView
@@ -254,104 +261,105 @@
         app:layout_constraintRight_toRightOf="@+id/glv25" />
 
     <TextView
-        android:id="@+id/txNameErgOben"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="Gesamt"
-        app:layout_constraintBottom_toBottomOf="@+id/glh40"
-        app:layout_constraintLeft_toLeftOf="@+id/glv05"
-        app:layout_constraintRight_toRightOf="@+id/glv25"
-        app:layout_constraintTop_toTopOf="@+id/glh35" />
-
-    <TextView
         android:id="@+id/txNameBonus"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Bonus"
+        app:layout_constraintTop_toTopOf="@+id/glh35"
+        app:layout_constraintBottom_toBottomOf="@+id/glh40"
+        app:layout_constraintLeft_toLeftOf="@+id/glv05"
+        app:layout_constraintRight_toRightOf="@+id/glv25" />
+
+    <TextView
+        android:id="@+id/txNameErgOben"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Gesamt"
         app:layout_constraintTop_toTopOf="@+id/glh40"
         app:layout_constraintBottom_toBottomOf="@+id/glh45"
         app:layout_constraintLeft_toLeftOf="@+id/glv05"
         app:layout_constraintRight_toRightOf="@+id/glv25" />
+
 
     <TextView
         android:id="@+id/txNameDreierpasch"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Dreierpasch"
-        app:layout_constraintTop_toTopOf="@+id/glh50"
-        app:layout_constraintBottom_toBottomOf="@+id/glh55"
-        app:layout_constraintLeft_toLeftOf="@+id/glv05"
-        app:layout_constraintRight_toRightOf="@+id/glv25" />
+        app:layout_constraintTop_toTopOf="@+id/glh05"
+        app:layout_constraintBottom_toBottomOf="@+id/glh10"
+        app:layout_constraintLeft_toLeftOf="@+id/glv50"
+        app:layout_constraintRight_toRightOf="@+id/glv70" />
 
     <TextView
         android:id="@+id/txNameViererpasch"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Viererpasch"
-        app:layout_constraintTop_toTopOf="@+id/glh55"
-        app:layout_constraintBottom_toBottomOf="@+id/glh60"
-        app:layout_constraintLeft_toLeftOf="@+id/glv05"
-        app:layout_constraintRight_toRightOf="@+id/glv25" />
+        app:layout_constraintTop_toTopOf="@+id/glh10"
+        app:layout_constraintBottom_toBottomOf="@+id/glh15"
+        app:layout_constraintLeft_toLeftOf="@+id/glv50"
+        app:layout_constraintRight_toRightOf="@+id/glv70" />
 
     <TextView
         android:id="@+id/txNameFullHouse"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Full-House"
-        app:layout_constraintTop_toTopOf="@+id/glh45"
-        app:layout_constraintBottom_toBottomOf="@+id/glh50"
-        app:layout_constraintLeft_toLeftOf="@+id/glv05"
-        app:layout_constraintRight_toRightOf="@+id/glv25" />
+        app:layout_constraintTop_toTopOf="@+id/glh15"
+        app:layout_constraintBottom_toBottomOf="@+id/glh20"
+        app:layout_constraintLeft_toLeftOf="@+id/glv50"
+        app:layout_constraintRight_toRightOf="@+id/glv70" />
 
     <TextView
         android:id="@+id/txNameKleineStrasse"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Kl. Straße"
-        app:layout_constraintTop_toTopOf="@+id/glh60"
-        app:layout_constraintBottom_toBottomOf="@+id/glh65"
-        app:layout_constraintLeft_toLeftOf="@+id/glv05"
-        app:layout_constraintRight_toRightOf="@+id/glv25" />
+        app:layout_constraintTop_toTopOf="@+id/glh20"
+        app:layout_constraintBottom_toBottomOf="@+id/glh25"
+        app:layout_constraintLeft_toLeftOf="@+id/glv50"
+        app:layout_constraintRight_toRightOf="@+id/glv70" />
 
     <TextView
         android:id="@+id/txNameGrosseStrasse"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Gr. Straße"
-        app:layout_constraintTop_toTopOf="@+id/glh65"
-        app:layout_constraintBottom_toBottomOf="@+id/glh70"
-        app:layout_constraintLeft_toLeftOf="@+id/glv05"
-        app:layout_constraintRight_toRightOf="@+id/glv25" />
+        app:layout_constraintTop_toTopOf="@+id/glh25"
+        app:layout_constraintBottom_toBottomOf="@+id/glh30"
+        app:layout_constraintLeft_toLeftOf="@+id/glv50"
+        app:layout_constraintRight_toRightOf="@+id/glv70" />
 
     <TextView
         android:id="@+id/txNameKniffel"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Kniffel"
-        app:layout_constraintTop_toTopOf="@+id/glh70"
-        app:layout_constraintBottom_toBottomOf="@+id/glh75"
-        app:layout_constraintLeft_toLeftOf="@+id/glv05"
-        app:layout_constraintRight_toRightOf="@+id/glv25" />
+        app:layout_constraintTop_toTopOf="@+id/glh30"
+        app:layout_constraintBottom_toBottomOf="@+id/glh35"
+        app:layout_constraintLeft_toLeftOf="@+id/glv50"
+        app:layout_constraintRight_toRightOf="@+id/glv70" />
 
     <TextView
         android:id="@+id/txNameChance"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Chance"
-        app:layout_constraintTop_toTopOf="@+id/glh75"
-        app:layout_constraintBottom_toBottomOf="@+id/glh80"
-        app:layout_constraintLeft_toLeftOf="@+id/glv05"
-        app:layout_constraintRight_toRightOf="@+id/glv25" />
+        app:layout_constraintTop_toTopOf="@+id/glh35"
+        app:layout_constraintBottom_toBottomOf="@+id/glh40"
+        app:layout_constraintLeft_toLeftOf="@+id/glv50"
+        app:layout_constraintRight_toRightOf="@+id/glv70" />
 
     <TextView
         android:id="@+id/txNameErgGesamt"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Gesamt"
-        app:layout_constraintBottom_toBottomOf="@+id/glh85"
-        app:layout_constraintLeft_toLeftOf="@+id/glv05"
-        app:layout_constraintRight_toRightOf="@+id/glv25"
-        app:layout_constraintTop_toTopOf="@+id/glh80" />
+        app:layout_constraintTop_toTopOf="@+id/glh40"
+        app:layout_constraintBottom_toBottomOf="@+id/glh45"
+        app:layout_constraintLeft_toLeftOf="@+id/glv50"
+        app:layout_constraintRight_toRightOf="@+id/glv70" />
 
 
     <TextView
@@ -362,7 +370,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh05"
         app:layout_constraintBottom_toBottomOf="@+id/glh10"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <TextView
         android:id="@+id/txZweier"
@@ -371,7 +379,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh10"
         app:layout_constraintBottom_toBottomOf="@+id/glh15"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <TextView
         android:id="@+id/txDreier"
@@ -380,7 +388,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh15"
         app:layout_constraintBottom_toBottomOf="@+id/glh20"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <TextView
         android:id="@+id/txVierer"
@@ -389,7 +397,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh20"
         app:layout_constraintBottom_toBottomOf="@+id/glh25"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <TextView
         android:id="@+id/txFuenfer"
@@ -398,7 +406,7 @@
         app:layout_constraintTop_toTopOf="@+id/glh25"
         app:layout_constraintBottom_toBottomOf="@+id/glh30"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <TextView
         android:id="@+id/txSechser"
@@ -407,96 +415,96 @@
         app:layout_constraintTop_toTopOf="@+id/glh30"
         app:layout_constraintBottom_toBottomOf="@+id/glh35"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
-
-    <TextView
-        android:id="@+id/txErgOben"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/glh40"
-        app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45"
-        app:layout_constraintTop_toTopOf="@+id/glh35" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <TextView
         android:id="@+id/txBonus"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/glh35"
+        app:layout_constraintBottom_toBottomOf="@+id/glh40"
+        app:layout_constraintLeft_toLeftOf="@+id/glv25"
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
+
+    <TextView
+        android:id="@+id/txErgOben"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="@+id/glh40"
         app:layout_constraintBottom_toBottomOf="@+id/glh45"
         app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintRight_toRightOf="@+id/glv50" />
 
     <TextView
         android:id="@+id/txDreierpasch"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@+id/glh50"
-        app:layout_constraintBottom_toBottomOf="@+id/glh55"
-        app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintTop_toTopOf="@+id/glh05"
+        app:layout_constraintBottom_toBottomOf="@+id/glh10"
+        app:layout_constraintLeft_toLeftOf="@+id/glv70"
+        app:layout_constraintRight_toRightOf="@+id/glv95" />
 
     <TextView
         android:id="@+id/txViererpasch"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@+id/glh55"
-        app:layout_constraintBottom_toBottomOf="@+id/glh60"
-        app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintTop_toTopOf="@+id/glh10"
+        app:layout_constraintBottom_toBottomOf="@+id/glh15"
+        app:layout_constraintLeft_toLeftOf="@+id/glv70"
+        app:layout_constraintRight_toRightOf="@+id/glv95" />
 
     <TextView
         android:id="@+id/txFullHouse"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@+id/glh45"
-        app:layout_constraintBottom_toBottomOf="@+id/glh50"
-        app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintTop_toTopOf="@+id/glh15"
+        app:layout_constraintBottom_toBottomOf="@+id/glh20"
+        app:layout_constraintLeft_toLeftOf="@+id/glv70"
+        app:layout_constraintRight_toRightOf="@+id/glv95" />
 
     <TextView
         android:id="@+id/txKleineStrasse"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@+id/glh60"
-        app:layout_constraintBottom_toBottomOf="@+id/glh65"
-        app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintTop_toTopOf="@+id/glh20"
+        app:layout_constraintBottom_toBottomOf="@+id/glh25"
+        app:layout_constraintLeft_toLeftOf="@+id/glv70"
+        app:layout_constraintRight_toRightOf="@+id/glv95" />
 
     <TextView
         android:id="@+id/txGrosseStrasse"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@+id/glh65"
-        app:layout_constraintBottom_toBottomOf="@+id/glh70"
-        app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintTop_toTopOf="@+id/glh25"
+        app:layout_constraintBottom_toBottomOf="@+id/glh30"
+        app:layout_constraintLeft_toLeftOf="@+id/glv70"
+        app:layout_constraintRight_toRightOf="@+id/glv95" />
 
     <TextView
         android:id="@+id/txKniffel"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@+id/glh70"
-        app:layout_constraintBottom_toBottomOf="@+id/glh75"
-        app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintTop_toTopOf="@+id/glh30"
+        app:layout_constraintBottom_toBottomOf="@+id/glh35"
+        app:layout_constraintLeft_toLeftOf="@+id/glv70"
+        app:layout_constraintRight_toRightOf="@+id/glv95" />
 
     <TextView
         android:id="@+id/txChance"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="@+id/glh75"
-        app:layout_constraintBottom_toBottomOf="@+id/glh80"
-        app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45" />
+        app:layout_constraintTop_toTopOf="@+id/glh35"
+        app:layout_constraintBottom_toBottomOf="@+id/glh40"
+        app:layout_constraintLeft_toLeftOf="@+id/glv70"
+        app:layout_constraintRight_toRightOf="@+id/glv95" />
 
     <TextView
         android:id="@+id/txErgGesamt"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/glh85"
-        app:layout_constraintLeft_toLeftOf="@+id/glv25"
-        app:layout_constraintRight_toRightOf="@+id/glv45"
-        app:layout_constraintTop_toTopOf="@+id/glh80" />
+        app:layout_constraintTop_toTopOf="@+id/glh40"
+        app:layout_constraintBottom_toBottomOf="@+id/glh45"
+        app:layout_constraintLeft_toLeftOf="@+id/glv70"
+        app:layout_constraintRight_toRightOf="@+id/glv95" />
 
 </android.support.constraint.ConstraintLayout>
