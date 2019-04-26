@@ -8,7 +8,7 @@
 
 
     <android.support.constraint.Guideline
-        android:id="@+id/glh10"
+        android:id="@+id/glh15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -16,7 +16,7 @@
         app:layout_constraintGuide_percent="0.1" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/glh15"
+        android:id="@+id/glh20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -24,7 +24,7 @@
         app:layout_constraintGuide_percent="0.15" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/glh20"
+        android:id="@+id/glh25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -32,7 +32,7 @@
         app:layout_constraintGuide_percent="0.20" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/glh25"
+        android:id="@+id/glh30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -40,7 +40,7 @@
         app:layout_constraintGuide_percent="0.25" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/glh30"
+        android:id="@+id/glh35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -48,7 +48,7 @@
         app:layout_constraintGuide_percent="0.30" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/glh35"
+        android:id="@+id/glh40"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -57,7 +57,7 @@
 
 
     <android.support.constraint.Guideline
-        android:id="@+id/glh40"
+        android:id="@+id/glh45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -65,7 +65,7 @@
         app:layout_constraintGuide_percent="0.40" />
 
     <android.support.constraint.Guideline
-        android:id="@+id/glh45"
+        android:id="@+id/glh50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -198,18 +198,18 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Einer"
-        app:layout_constraintBottom_toBottomOf="@+id/glh15"
+        app:layout_constraintBottom_toBottomOf="@+id/glh20"
         app:layout_constraintLeft_toLeftOf="@+id/glv05"
         app:layout_constraintRight_toRightOf="@+id/glv25"
-        app:layout_constraintTop_toTopOf="@+id/glh10" />
+        app:layout_constraintTop_toTopOf="@+id/glh15" />
 
     <TextView
         android:id="@+id/txNameZweier"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Zweier"
-        app:layout_constraintTop_toTopOf="@+id/glh15"
-        app:layout_constraintBottom_toBottomOf="@+id/glh20"
+        app:layout_constraintTop_toTopOf="@+id/glh20"
+        app:layout_constraintBottom_toBottomOf="@+id/glh25"
         app:layout_constraintLeft_toLeftOf="@+id/glv05"
         app:layout_constraintRight_toRightOf="@+id/glv25" />
 
@@ -218,8 +218,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Dreier"
-        app:layout_constraintTop_toTopOf="@+id/glh20"
-        app:layout_constraintBottom_toBottomOf="@+id/glh25"
+        app:layout_constraintTop_toTopOf="@+id/glh25"
+        app:layout_constraintBottom_toBottomOf="@+id/glh30"
         app:layout_constraintLeft_toLeftOf="@+id/glv05"
         app:layout_constraintRight_toRightOf="@+id/glv25" />
 
@@ -228,8 +228,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Vierer"
-        app:layout_constraintTop_toTopOf="@+id/glh25"
-        app:layout_constraintBottom_toBottomOf="@+id/glh30"
+        app:layout_constraintTop_toTopOf="@+id/glh30"
+        app:layout_constraintBottom_toBottomOf="@+id/glh35"
         app:layout_constraintLeft_toLeftOf="@+id/glv05"
         app:layout_constraintRight_toRightOf="@+id/glv25" />
 
@@ -238,8 +238,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Fünfer"
-        app:layout_constraintTop_toTopOf="@+id/glh30"
-        app:layout_constraintBottom_toBottomOf="@+id/glh35"
+        app:layout_constraintTop_toTopOf="@+id/glh35"
+        app:layout_constraintBottom_toBottomOf="@+id/glh40"
         app:layout_constraintLeft_toLeftOf="@+id/glv05"
         app:layout_constraintRight_toRightOf="@+id/glv25" />
 
@@ -248,8 +248,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Sechser"
-        app:layout_constraintTop_toTopOf="@+id/glh35"
-        app:layout_constraintBottom_toBottomOf="@+id/glh40"
+        app:layout_constraintTop_toTopOf="@+id/glh40"
+        app:layout_constraintBottom_toBottomOf="@+id/glh45"
         app:layout_constraintLeft_toLeftOf="@+id/glv05"
         app:layout_constraintRight_toRightOf="@+id/glv25" />
 
@@ -258,8 +258,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Bonus"
-        app:layout_constraintTop_toTopOf="@+id/glh40"
-        app:layout_constraintBottom_toBottomOf="@+id/glh45"
+        app:layout_constraintTop_toTopOf="@+id/glh45"
+        app:layout_constraintBottom_toBottomOf="@+id/glh50"
         app:layout_constraintLeft_toLeftOf="@+id/glv05"
         app:layout_constraintRight_toRightOf="@+id/glv25" />
 
@@ -268,7 +268,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Gesamt"
-        app:layout_constraintTop_toTopOf="@+id/glh45"
+        app:layout_constraintTop_toTopOf="@+id/glh50"
         app:layout_constraintBottom_toBottomOf="@+id/glh50"
         app:layout_constraintLeft_toLeftOf="@+id/glv05"
         app:layout_constraintRight_toRightOf="@+id/glv25" />
@@ -279,8 +279,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Dreierpasch"
-        app:layout_constraintTop_toTopOf="@+id/glh10"
-        app:layout_constraintBottom_toBottomOf="@+id/glh15"
+        app:layout_constraintTop_toTopOf="@+id/glh15"
+        app:layout_constraintBottom_toBottomOf="@+id/glh20"
         app:layout_constraintLeft_toLeftOf="@+id/glv50"
         app:layout_constraintRight_toRightOf="@+id/glv70" />
 
@@ -289,8 +289,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Viererpasch"
-        app:layout_constraintTop_toTopOf="@+id/glh15"
-        app:layout_constraintBottom_toBottomOf="@+id/glh20"
+        app:layout_constraintTop_toTopOf="@+id/glh20"
+        app:layout_constraintBottom_toBottomOf="@+id/glh25"
         app:layout_constraintLeft_toLeftOf="@+id/glv50"
         app:layout_constraintRight_toRightOf="@+id/glv70" />
 
@@ -299,8 +299,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Full-House"
-        app:layout_constraintTop_toTopOf="@+id/glh20"
-        app:layout_constraintBottom_toBottomOf="@+id/glh25"
+        app:layout_constraintTop_toTopOf="@+id/glh25"
+        app:layout_constraintBottom_toBottomOf="@+id/glh30"
         app:layout_constraintLeft_toLeftOf="@+id/glv50"
         app:layout_constraintRight_toRightOf="@+id/glv70" />
 
@@ -309,8 +309,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Kl. Straße"
-        app:layout_constraintTop_toTopOf="@+id/glh25"
-        app:layout_constraintBottom_toBottomOf="@+id/glh30"
+        app:layout_constraintTop_toTopOf="@+id/glh30"
+        app:layout_constraintBottom_toBottomOf="@+id/glh35"
         app:layout_constraintLeft_toLeftOf="@+id/glv50"
         app:layout_constraintRight_toRightOf="@+id/glv70" />
 
@@ -319,8 +319,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Gr. Straße"
-        app:layout_constraintTop_toTopOf="@+id/glh30"
-        app:layout_constraintBottom_toBottomOf="@+id/glh35"
+        app:layout_constraintTop_toTopOf="@+id/glh35"
+        app:layout_constraintBottom_toBottomOf="@+id/glh40"
         app:layout_constraintLeft_toLeftOf="@+id/glv50"
         app:layout_constraintRight_toRightOf="@+id/glv70" />
 
@@ -329,8 +329,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Kniffel"
-        app:layout_constraintTop_toTopOf="@+id/glh35"
-        app:layout_constraintBottom_toBottomOf="@+id/glh40"
+        app:layout_constraintTop_toTopOf="@+id/glh40"
+        app:layout_constraintBottom_toBottomOf="@+id/glh45"
         app:layout_constraintLeft_toLeftOf="@+id/glv50"
         app:layout_constraintRight_toRightOf="@+id/glv70" />
 
@@ -339,8 +339,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Chance"
-        app:layout_constraintTop_toTopOf="@+id/glh40"
-        app:layout_constraintBottom_toBottomOf="@+id/glh45"
+        app:layout_constraintTop_toTopOf="@+id/glh45"
+        app:layout_constraintBottom_toBottomOf="@+id/glh50"
         app:layout_constraintLeft_toLeftOf="@+id/glv50"
         app:layout_constraintRight_toRightOf="@+id/glv70" />
 
@@ -349,7 +349,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Gesamt"
-        app:layout_constraintTop_toTopOf="@+id/glh45"
+        app:layout_constraintTop_toTopOf="@+id/glh50"
         app:layout_constraintBottom_toBottomOf="@+id/glh50"
         app:layout_constraintLeft_toLeftOf="@+id/glv50"
         app:layout_constraintRight_toRightOf="@+id/glv70" />
