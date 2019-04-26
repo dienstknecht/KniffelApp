@@ -1,11 +1,25 @@
 package com.example.kniffellogik;
 
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SensorEventListener {
+
+    // variables for shake detection
+    private static final float SHAKE_THRESHOLD = 3.25f; // m/S**2
+    private static final int MIN_TIME_BETWEEN_SHAKES_MILLISECS = 1000;
+    private long mLastShakeTime;
+    private SensorManager mSensorMgr;
+    private boolean rollItBaby;
+
+    public MainActivity() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -489,7 +503,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void game(){
         while(true/*spiel noch nicht zuende, vllt einfach mit zaehler implementieren, weil eh immer gleich viele Zuege*/){
+            rollItBaby = true;
             int[] wuerfel = diceRoll();//wuerfeln-Methode, vllt auch mehrere Methoden? --> Moritz
+            rollItBaby = false;
             berechneMoeglichkeiten(wuerfel);
             //klick auf button und eintragen in textview -> sobald Layout erstellt --> Felix, Jessica
             //wechsle Spieler/Activity --> absprechen, wie genau das funktioniert
@@ -504,4 +520,36 @@ public class MainActivity extends AppCompatActivity {
         return result;
     }
 
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        if (rollItBaby) {
+            if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+                long curTime = System.currentTimeMillis();
+                if ((curTime - mLastShakeTime) > MIN_TIME_BETWEEN_SHAKES_MILLISECS) {
+
+                    float x = event.values[0];
+                    float y = event.values[1];
+                    float z = event.values[2];
+
+                    double acceleration = Math.sqrt(Math.pow(x, 2) +
+                            Math.pow(y, 2) +
+                            Math.pow(z, 2)) - SensorManager.GRAVITY_EARTH;
+
+                    if (acceleration > SHAKE_THRESHOLD) {
+                        mLastShakeTime = curTime;
+                        diceRoll();
+                    }
+                }
+            }
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+        // Ignore
+    }
+
+
 }
+
+// Shake Detection: https://stackoverflow.com/questions/5271448/how-to-detect-shake-event-with-android -> User Tad
