@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">KniffelLogik</string>
+    <string name="spielanleitung">Willkommen bei Kniffel\n\n
+
+Schnapp dir mindestens einen Freund und los geht es!\n\n
+
+Und so funktioniert es: \n\n
+
+\t	• Bist du am Zug, kannst du mit bis zu 5 Würfeln dein Glück versuchen. Jeder Spieler hat dabei drei Würfe.\n
+\t	• In diesen drei Würfen versuchst du, möglichst viele Punkte für eine der unten beschriebenen Kombinationen zu erzielen. Dabei kanns du bei deinen ersten beiden Würfen Würfel mit passender Augenzahl auf die Seite legen und muss diese nicht noch einmal würfeln.\n
+\t	• Spätestens nach dem dritten Wurf müsst du ein Feld aus der Liste ausfüllen. Idealerweise natürlich das, das dir am meisten Punkte bringt. Eingetragen werden muss immer etwas. Hast du mal kein Glück gehabt und kannst kein Feld ausfüllen, so musst du ein Feld deiner Wahl für 0 Punkte "opfern".\n
+\t	• Bist du fertig mit deinem Zug, ist der nächste an der Reihe.\n
+\t	• Das Spiel ist zu Ende, wenn jeder Spieler alle Felder ausgefüllt hat. Dann wird abgerechnet:\n
+\t	Zuerst die Punkte mit den Einern bis zu den Sechsern. Wer hier mindestens 65 Punkte erreicht hat, bekommt 35 Extrapunkte gescheckt. Zum Schluss wird die Gesamtsumme addiert, gewonnen hat derjenige, welche die meisten Punkte gesammelt hat.\n\n
+
+Diese Kombinationen führen dich zu Sieg\n
+Nach dem Würfeln, ist deine Zeit gekommen, dich zu entscheiden. Du kannst aus folgenden Kombinationen wählen,
+ um möglichst viele Punkte zu sammeln:\n
+\t	• 1er - hier werden alle gewürfelten Einer addiert.\n
+\t	• 2er - hier werden alle gewürfelten Zweier addiert.\n
+\t	• 3er - hier werden alle gewürfelten Dreier addiert.\n
+\t	• 4er - hier werden alle gewürfelten Vierer addiert.\n
+\t	• 5er - hier werden alle gewürfelten Fünfer addiert.\n
+\t	• 6er - hier werden alle gewürfelten Sechser addiert.\n
+\t	• Dreierpasch - mindestens dreimal dieselbe Zahl - alle Augen werden zusammengezählt.\n
+\t	• Viererpasch - mindestens viermal dieselbe Zahl - alle Augen werden zusammengezählt.\n
+\t	• Full-House - je dreimal und zweimal gleiche Zahlen, du erhältst 25 Punkte.\n
+\t	• Kleine Straße - Würfelkombination von 1-4, 2-5 oder 3-6, du erhältst 30 Punkte.\n
+\t	• Große Straße - Würfelkombination von 1-5 oder 2-6, du erhältst 40 Punkte.\n
+\t	• Kniffel - fünfmal die gleiche Zahl, du erhältst 50 Punkte.\n
+\t	• Chance - hier muss nichts zusammenpassen. Alle Augen werden zusammengezählt.</string>
 </resources>
